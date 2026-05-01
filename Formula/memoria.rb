@@ -5,21 +5,21 @@
 class Memoria < Formula
   desc "A terminal-based note-taking app with full-text search, git sync, and a TUI"
   homepage "https://github.com/cassiomarques/memoria"
-  version "0.12.0"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cassiomarques/memoria/releases/download/v0.12.0/memoria_0.12.0_darwin_amd64.tar.gz"
-      sha256 "27cbf5ad0adf7b84210e87d3a27b2a90a4844188542558865d71ea45cdc3c444"
+      url "https://github.com/cassiomarques/memoria/releases/download/v0.13.0/memoria_0.13.0_darwin_amd64.tar.gz"
+      sha256 "41959d078bd337322e3cc41be12585ac2be715b405dabbad2668efb2cd21c9e1"
 
       define_method(:install) do
         bin.install "memoria"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cassiomarques/memoria/releases/download/v0.12.0/memoria_0.12.0_darwin_arm64.tar.gz"
-      sha256 "682c541d5dc03b52a2b6eea27a5cb1d53c10092f204c397ffe53b893db0dec40"
+      url "https://github.com/cassiomarques/memoria/releases/download/v0.13.0/memoria_0.13.0_darwin_arm64.tar.gz"
+      sha256 "0d0224f394b4e6d10a11fcfbcab92f6c42ab6a5649e256168f35bb1000fee70e"
 
       define_method(:install) do
         bin.install "memoria"
@@ -29,15 +29,15 @@ class Memoria < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cassiomarques/memoria/releases/download/v0.12.0/memoria_0.12.0_linux_amd64.tar.gz"
-      sha256 "3232c22486f966fb033dc524fed1428013f14387b975dc9686ef0d2022a2d919"
+      url "https://github.com/cassiomarques/memoria/releases/download/v0.13.0/memoria_0.13.0_linux_amd64.tar.gz"
+      sha256 "b5cb02e179b68f72ffa50442502c4f5419fddff0cf475d6ae219f6649c2da769"
       define_method(:install) do
         bin.install "memoria"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cassiomarques/memoria/releases/download/v0.12.0/memoria_0.12.0_linux_arm64.tar.gz"
-      sha256 "169507507a17a4e7d6eda04ab1fb3db9633bb4c773243994d948bc92a18e0dea"
+      url "https://github.com/cassiomarques/memoria/releases/download/v0.13.0/memoria_0.13.0_linux_arm64.tar.gz"
+      sha256 "156afbe06a6d786315f4bfddeeaaca382476fd110a77b9a0d5e9e67bfd0c4933"
       define_method(:install) do
         bin.install "memoria"
       end
