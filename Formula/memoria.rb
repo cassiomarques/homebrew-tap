@@ -11,7 +11,7 @@ class Memoria < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cassiomarques/memoria/releases/download/v0.15.0/memoria_0.15.0_darwin_amd64.tar.gz"
-      sha256 "74e359f089b2dc53df22bba34ba53389895466ade6a39033a794335f97d5d37e"
+      sha256 "9b6f13658e8a94b3f0fb0720f53bd20a2ee3a2b0ff329fa7ef0c5d29c4b4216e"
 
       define_method(:install) do
         bin.install "memoria"
@@ -19,7 +19,7 @@ class Memoria < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/cassiomarques/memoria/releases/download/v0.15.0/memoria_0.15.0_darwin_arm64.tar.gz"
-      sha256 "27f4f7301551743822044a4d9a7154559db657482a0e6f8d2f85c855c71e1466"
+      sha256 "8565bd34186e306574c287540df6576c3024ea6e6f75f6160924d4efb60f7420"
 
       define_method(:install) do
         bin.install "memoria"
@@ -30,14 +30,14 @@ class Memoria < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/cassiomarques/memoria/releases/download/v0.15.0/memoria_0.15.0_linux_amd64.tar.gz"
-      sha256 "67e1269ebd61b180e193b0f3c04b19e21ea200783b20167269498e1fe046378b"
+      sha256 "67fddfe099f5f55e51d88fb0da6f6b068051b1382fc907bcbaf5c9bf4bc1337a"
       define_method(:install) do
         bin.install "memoria"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/cassiomarques/memoria/releases/download/v0.15.0/memoria_0.15.0_linux_arm64.tar.gz"
-      sha256 "595c08b09c21eb16d368cdacd77a83dfabd44c087501c25b2f1c7da5c665d514"
+      sha256 "227cc926f6bb25fb18296e114b1b74007e17d9c681525748a1b4ea526b99f07d"
       define_method(:install) do
         bin.install "memoria"
       end
